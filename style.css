@@ -1,0 +1,223 @@
+ * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: ;
+}
+
+#headerstyle {
+	text-align: center;
+	font-size: 3rem;
+	height: 100px;
+	padding: 10px;
+	background-color: #222126;
+	color: #9EE09D;
+}
+
+.navigationbar ul {
+	list-style-type: none;
+	background-color: #222126;
+	display: flex;
+	text-align: flex;
+	font-size: 1.8rem;
+}
+
+.navigationbar a {
+	color: #9EE09D;
+	text-decoration: none;
+	padding: 0 20px;
+}
+
+.navigationbar a:hover {
+	background-color: #9EE09D;
+	color:#222126;
+}
+
+@media (max-width: 600px) {
+	.navigationbar ul {
+		flex-direction: column;
+	}
+}
+
+.mobilenav {
+	display: none;
+}
+
+#welcome {
+	text-align: left;
+	font-size: 1.5rem;
+	height: 50px;
+	padding: 10px;
+	background-color: #9EE09D;
+	color: #222126;
+}
+
+h2 {
+	text-align: left;
+	padding-left: 20px;
+	font-size: 2rem;
+}
+
+.welcome {
+	background-color: #9EE09D;
+	color:#222126;
+	padding-left: 10px;	
+}
+
+.welcome p {
+	padding-left: 10px;
+	text-align: justify;
+	color: #222126;
+	font-size: 1.3rem;
+	margin-right: 10px;
+}
+
+
+.stories {
+	display: flex;
+	flex-direction: column;
+	background-color:#222126 ;
+	color:#9EE09D;
+	padding-top: 10px;
+	
+}
+
+.stories_line {
+	display: flex;
+	flex-wrap: 50%;
+	flex-direction: row;
+	margin: 10px;
+	padding: 20px;
+
+}
+
+.stories_line div {
+  display: flex;
+	flex-wrap: 50%;
+	flex-direction: column;
+	width: 50%;
+}
+
+.stories_line h4 {
+	padding: 20px;
+	text-align: left;
+	font-size: 1.5rem;
+}
+
+.stories_line a {
+	color:#9EE09D;
+	text-decoration: none;
+}
+
+.stories_line a:hover {
+	background-color: #9EE09D;
+	color: #222126;
+}
+
+.stories_line p {
+	padding: 20px;
+	text-align: justify;
+	color: #9EE09D;
+}
+
+.stories_line img {
+	padding: 10px;
+	float: right;
+	width: 300px;
+	height: 300px;
+}
+
+.CV {
+  display: flex;
+	flex-direction: column;
+	background-color: #9EE09D;
+	color: #222126;
+}
+
+.CV_line {
+	display: flex;
+	flex-direction: row;
+	margin: 20px;
+	padding: 20px;
+}
+
+.CV_line div {
+	display: flex;
+	flex-direction: column;
+}
+
+.CV_entry div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: 50%;
+}
+
+.CV_line h3 {
+	text-align: left;
+	font-size: 1.7rem;
+	padding-left: 10px;
+	padding-top: 3px;
+}
+
+.CV_line h4 {
+	text-align: left;
+	font-size: 1.5rem;
+	padding-left: 10px;
+	padding-top: 3px;
+
+
+
+
+
+@media (min-width: 1200px) {
+	body {
+		max-width: 1400px;
+		margin: 0 auto;
+	}
+
+
+
+
+/*This is the mobilenav just in case*/
+.mobilenav {
+  display: none;
+  width: 100%;
+  background-color: ##222126;
+}
+
+.mobilenav > * {
+/*   flex-grow: 1; */
+}
+
+.mobilenav {
+  margin-left: 1rem;
+}
+
+.mobilenav {
+  text-decoration: none;
+}
+
+/* "Hide" checkbox -- moves it off screen*/
+#menu-btn {
+  position: absolute;
+  top: -100%;
+  left: -100%;
+}
+
+/* Hide hamburger for bigger screens */
+.menu-icon {
+  visibility: hidden;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 250px;
+  margin-right: 2rem;
+}
+
+/*end of mobile nav here*/
