@@ -1,0 +1,288 @@
+ * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	  max-width: 1500px;
+		margin: 0, auto;
+}
+
+/** I don't know what I did with margins or site width (or both) when I put it on 1200px I have big white space on righthand side*/
+
+#headerstyle {
+	text-align: center;
+	font-size: 3rem;
+	height: 100px;
+	padding: 10px;
+	background-color: #222126;
+	color: #9EE09D;
+	font-family: "Cal Sans", sans-serif;
+}
+
+.navigationbar ul {
+	list-style-type: none;
+	background-color: #222126;
+	display: flex;
+	text-align: flex;
+	font-size: 1.8rem;
+	font-family: "Permanent Marker", cursive;
+}
+
+.navigationbar a {
+	color: #9EE09D;
+	text-decoration: none;
+	padding: 0 20px;
+}
+
+.navigationbar a:hover {
+	background-color: #9EE09D;
+	color:#222126;
+}
+
+@media (max-width: 600px) {
+	.navigationbar ul {
+		flex-direction: column;
+	}
+}
+
+.mobilenav {
+	display: none;
+}
+
+.welcome {
+	padding: 70px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: #9EE09D;
+	color: #222126;
+	text-align: justify;
+	font-size: 1.3rem;
+	font-family: "Neuton", serif;
+}
+
+h2 {
+	text-align: left;
+	padding-left: 20px;
+	font-size: 2rem;
+	font-family: "Permanent Marker", cursive;
+}
+
+#work {
+	display: flex;
+	flex-direction: column;
+	background-color:#222126 ;
+	color:#9EE09D;
+	padding-top: 10px;
+}
+
+.storiesbox {
+	width: 100%;
+	display: flex;
+	margin: 0,5px,0,0;
+}
+
+.text {
+	width: 60%;
+}
+
+.text h4 {
+	padding: 20px;
+	text-align: left;
+	font-size: 1.5rem;
+	font-family: "Neuton", serif;
+}
+
+.text a {
+	color:#9EE09D;
+	text-decoration: none;
+}
+
+.text a:hover {
+	background-color: #9EE09D;
+	color: #222126;
+}
+
+.text p {
+	padding: 20px;
+	text-align: justify;
+	color: #9EE09D;
+	font-family: "Neuton", serif;
+}
+
+
+.photo {
+	width: 40%;
+}
+
+.photo img {
+	width: 100%;
+}
+
+#cv {
+  display: flex;
+	flex-direction: column;
+	background-color: #9EE09D;
+	color: #222126;
+}
+
+#cv h2 {
+	text-align: center;
+}
+
+.journalism {
+	text-align: justify;
+	padding: 20px;
+	font-family: "Neuton", serif;
+	margin: 0, auto;
+}
+
+.journalism_headline {
+	width: 100%;
+	display: flex;
+	padding-bottom: 5px;
+}
+
+.newsroom {
+	width: 70%;
+	display: flex;
+	text-align: left;
+
+}
+
+.year {
+	width: 30%;
+	display: flex;
+	text-align: right;
+}
+
+.journalism_text {
+	width: 65%;
+	display: flex;
+	padding-bottom: 5px;
+}
+
+/** there is a problem here, it does not want to show me hoover as it is set up here */
+
+.journalism_text a {
+	color: #9EE09D;
+	text-decoration: none;
+}
+
+.journalism_text a:hover {
+	background-color: #222126;
+	color: #9EE09D;
+}
+
+.training {
+	padding: 20px;
+	font-family: "Neuton", serif;
+	margin: 0, auto;
+}
+
+.training_headline {
+	width: 100%;
+	display: flex;
+	padding-bottom: 5px;
+}
+
+.organisation {
+	width: 70%;
+	display: flex;
+	text-align: left;
+}
+
+.time {
+	width: 30%;
+	display: flex;
+	text-align: left;
+}
+
+.org_text {
+	width: 65%;
+	display: flex;
+	padding-bottom: 5px;
+}
+
+.contact {
+	width: 100%;
+	display: flex;
+	padding: 400px;
+	background-color: #9EE09D;
+	color: #222126;
+	font-size: 2rem;
+	height: 800px;
+	text-align: center;
+	font-family: "Permanent Marker", cursive;
+}
+
+.contact button {
+	border: none;
+	display: inline-block;
+	color: #9EE09D;
+	background-color: #222126; 
+	font-size: 2rem;
+	font-family: "Permanent Marker", cursive;
+}
+
+.contact a {
+	color:#222126;
+	text-decoration: none;
+}
+
+.contact a:hover {
+	background-color: #222126;
+	color: #9EE09D;
+
+
+@media (min-width: 1200px) {
+	body {
+		max-width: 1400px;
+		margin: 0, auto;
+	}
+
+
+
+
+/*This is the mobilenav just in case*/
+.mobilenav {
+  display: none;
+  width: 100%;
+  background-color: ##222126;
+}
+
+.mobilenav > * {
+/*   flex-grow: 1; */
+}
+
+.mobilenav {
+  margin-left: 1rem;
+}
+
+.mobilenav {
+  text-decoration: none;
+}
+
+/* "Hide" checkbox -- moves it off screen*/
+#menu-btn {
+  position: absolute;
+  top: -100%;
+  left: -100%;
+}
+
+/* Hide hamburger for bigger screens */
+.menu-icon {
+  visibility: hidden;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 250px;
+  margin-right: 2rem;
+}
+
+/*end of mobile nav here*/
